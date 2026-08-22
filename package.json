@@ -1,0 +1,39 @@
+{
+  "name": "async-erp-sync-engine",
+  "version": "1.0.0",
+  "description": "Production-ready async ERP synchronization microservice using BullMQ and Redis",
+  "main": "dist/server.js",
+  "scripts": {
+    "start": "node dist/server.js",
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "test": "jest --runInBand --forceExit"
+  },
+  "dependencies": {
+    "bullmq": "^5.7.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "ioredis": "^5.4.1",
+    "p-retry": "^6.2.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.2",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.5",
+    "tsx": "^4.15.6",
+    "typescript": "^5.4.5"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "testMatch": [
+      "**/tests/**/*.test.ts"
+    ]
+  },
+  "allowScripts": {
+    "msgpackr-extract@3.0.4": true,
+    "esbuild@0.28.2": true
+  }
+}
