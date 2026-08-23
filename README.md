@@ -1,7 +1,10 @@
 # async-erp-sync-engine
 
-A production-ready asynchronous ERP synchronisation microservice built with **Node.js**, **TypeScript**, **BullMQ**, and **Redis**. Inbound order webhooks are accepted instantly over HTTP and processed durably in the background with full exponential-backoff retry logic and dead-letter queue support.
+> **Author:** Usman Khan ([@bluevisi](https://github.com/bluevisi)) | **Vendor:** Zentiq Labs  
+> **Primary Tech Stack:** Node.js, TypeScript, BullMQ, Redis, Docker, Express, Zod  
+> **Domain:** Distributed Systems, Asynchronous Message Processing, Webhook Ingestion, ERP Integration  
 
+A production-ready asynchronous ERP synchronisation microservice built with **Node.js**, **TypeScript**, **BullMQ**, and **Redis**. Inbound order webhooks are accepted instantly over HTTP and processed durably in the background with full exponential-backoff retry logic and dead-letter queue support.
 ---
 
 ## Architecture Overview
